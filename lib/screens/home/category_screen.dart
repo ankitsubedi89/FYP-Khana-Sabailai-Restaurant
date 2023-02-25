@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:khana_sabailai_restaurant/controllers/menu_controller.dart';
 import 'package:khana_sabailai_restaurant/models/category.dart';
 import 'package:khana_sabailai_restaurant/widgets/add_edit_food.dart';
+import 'package:khana_sabailai_restaurant/widgets/add_food.dart';
 import 'package:khana_sabailai_restaurant/widgets/circular_btn.dart';
 import 'package:khana_sabailai_restaurant/widgets/custom_button.dart';
 import 'package:khana_sabailai_restaurant/widgets/food_card.dart';
@@ -86,7 +87,7 @@ class CategoryScreen extends StatelessWidget {
                                                 showDialog(
                                                     context: (context),
                                                     builder: (context) {
-                                                      return AddFoodDialog(
+                                                      return EditFoodDialog(
                                                         type: 'Edit',
                                                         pickBtn: CustomButton(
                                                           onPressed: () {

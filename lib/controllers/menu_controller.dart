@@ -22,6 +22,10 @@ class MenuController extends GetxController {
   TextEditingController foodPriceController = TextEditingController();
   TextEditingController foodDescriptionController = TextEditingController();
   TextEditingController foodQuantityController = TextEditingController();
+  TextEditingController foodNameControllerAdd = TextEditingController();
+  TextEditingController foodPriceControllerAdd = TextEditingController();
+  TextEditingController foodDescriptionControllerAdd = TextEditingController();
+  TextEditingController foodQuantityControllerAdd = TextEditingController();
 
   bool isLoading = false;
 
@@ -80,15 +84,19 @@ class MenuController extends GetxController {
     foodPriceController.clear();
     foodDescriptionController.clear();
     foodQuantityController.clear();
+    foodNameControllerAdd.clear();
+    foodPriceControllerAdd.clear();
+    foodDescriptionControllerAdd.clear();
+    foodQuantityControllerAdd.clear();
     imageFile = null;
     update();
   }
 
   addDish(context, category) async {
-    String foodName = foodNameController.text;
-    String foodPrice = foodPriceController.text;
-    String foodDescription = foodDescriptionController.text;
-    String foodQuantity = foodQuantityController.text;
+    String foodName = foodNameControllerAdd.text;
+    String foodPrice = foodPriceControllerAdd.text;
+    String foodDescription = foodDescriptionControllerAdd.text;
+    String foodQuantity = foodQuantityControllerAdd.text;
 
     if (foodName.isEmpty) {
       customGetSnackbar('Error', 'Dish name is empty', 'error');

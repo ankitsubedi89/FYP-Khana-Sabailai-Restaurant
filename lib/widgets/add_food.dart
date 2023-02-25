@@ -6,8 +6,8 @@ import 'package:get/get.dart';
 import 'package:khana_sabailai_restaurant/controllers/menu_controller.dart';
 import 'package:khana_sabailai_restaurant/widgets/custom_text_field.dart';
 
-class EditFoodDialog extends StatelessWidget {
-  const EditFoodDialog(
+class AddFoodDialog extends StatelessWidget {
+  const AddFoodDialog(
       {Key? key,
       required this.pickBtn,
       required this.button,
@@ -57,27 +57,27 @@ class EditFoodDialog extends StatelessWidget {
                 const SizedBox(height: 20),
                 CustomFormField(
                   label: 'Food Name',
-                  controller: controller.foodNameController,
+                  controller: controller.foodNameControllerAdd,
                   prefixIcon: const Icon(Icons.dining_sharp),
                 ),
                 const SizedBox(height: 20),
                 CustomFormField(
                   label: 'Food Price',
-                  controller: controller.foodPriceController,
+                  controller: controller.foodPriceControllerAdd,
                   prefixIcon: const Icon(Icons.money),
                   keyboardType: TextInputType.number,
                 ),
                 const SizedBox(height: 20),
                 CustomFormField(
                   label: 'Food Quantity',
-                  controller: controller.foodQuantityController,
+                  controller: controller.foodQuantityControllerAdd,
                   prefixIcon: const Icon(Icons.numbers),
                   keyboardType: TextInputType.number,
                 ),
                 const SizedBox(height: 20),
                 CustomFormField(
                   label: 'Food Description',
-                  controller: controller.foodDescriptionController,
+                  controller: controller.foodDescriptionControllerAdd,
                   prefixIcon: const Icon(Icons.description),
                   lines: 5,
                 ),
