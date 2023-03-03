@@ -302,6 +302,18 @@ class OrderCard extends StatelessWidget {
               fontSize: 14,
             ),
           ),
+          Text('User: ${order.userName}',
+              style: const TextStyle(
+                fontSize: 14,
+              )),
+          Text('Phone: ${order.userContact}',
+              style: const TextStyle(
+                fontSize: 14,
+              )),
+          Text('Address: ${order.userAddress}',
+              style: const TextStyle(
+                fontSize: 14,
+              )),
           const SizedBox(
             height: 20,
           ),
