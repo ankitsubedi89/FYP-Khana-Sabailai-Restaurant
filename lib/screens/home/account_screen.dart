@@ -156,6 +156,26 @@ class AccountScreen extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
+                  Get.toNamed(GetRoutes.loc_screen);
+                },
+                child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    decoration: boxDecoration(),
+                    child: const Text(
+                      'LeftOver Companies',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    )),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: () {
                   showDialog(
                       context: (context),
                       builder: (context) {

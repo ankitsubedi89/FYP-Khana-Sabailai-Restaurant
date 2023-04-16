@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:khana_sabailai_restaurant/controllers/bottomtab_controller.dart';
+import 'package:khana_sabailai_restaurant/controllers/loc_controller.dart';
 import 'package:khana_sabailai_restaurant/controllers/menu_controller.dart';
 import 'package:khana_sabailai_restaurant/controllers/order_controller.dart';
 import 'package:khana_sabailai_restaurant/controllers/user_controller.dart';
@@ -14,6 +15,7 @@ class BottomTab extends StatelessWidget {
   final menuController = Get.put(MenuController());
   final orderController = Get.put(OrderController());
   final userController = Get.put(UserController());
+  final locController = Get.put(LocController());
 
   @override
   Widget build(BuildContext context) {
