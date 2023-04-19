@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                GetBuilder<MenuController>(builder: (controller) {
+                GetBuilder<MenueController>(builder: (controller) {
                   return Wrap(
                     children: controller.categories
                         .map((e) => InkWell(

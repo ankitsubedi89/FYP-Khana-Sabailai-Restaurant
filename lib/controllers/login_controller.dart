@@ -41,7 +41,6 @@ class LoginController extends GetxController {
       'password': passwordController.text,
     });
     var res = await json.decode(response.body);
-    print(res);
     if (res['success']) {
       User user = User.fromJson(res['data']);
       await SharedPrefs().storeUser(json.encode(user));

@@ -17,7 +17,7 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<MenuController>(builder: (controller) {
+    return GetBuilder<MenueController>(builder: (controller) {
       return Scaffold(
         appBar: AppBar(
           title: Text(category.name!),
@@ -66,7 +66,7 @@ class CategoryScreen extends StatelessWidget {
                                 Positioned(
                                   left: 5,
                                   top: 5,
-                                  child: GetBuilder<MenuController>(
+                                  child: GetBuilder<MenueController>(
                                     builder: (controller) {
                                       return Row(
                                         children: [

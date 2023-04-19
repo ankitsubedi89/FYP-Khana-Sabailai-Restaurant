@@ -20,7 +20,7 @@ class EditFoodDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<MenuController>(builder: (controller) {
+    return GetBuilder<MenueController>(builder: (controller) {
       return Dialog(
         child: Container(
           padding: const EdgeInsets.all(20),

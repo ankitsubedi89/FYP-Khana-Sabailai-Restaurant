@@ -12,7 +12,7 @@ class BottomTab extends StatelessWidget {
   BottomTab({Key? key}) : super(key: key);
 
   final bottomTabController = Get.put(BottomTabController());
-  final menuController = Get.put(MenuController());
+  final menuController = Get.put(MenueController());
   final orderController = Get.put(OrderController());
   final userController = Get.put(UserController());
   final locController = Get.put(LocController());

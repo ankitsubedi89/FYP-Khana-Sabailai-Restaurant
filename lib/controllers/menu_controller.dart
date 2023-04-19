@@ -11,7 +11,7 @@ import 'package:khana_sabailai_restaurant/models/user.dart';
 import 'package:khana_sabailai_restaurant/utils/shared_prefs.dart';
 import 'package:khana_sabailai_restaurant/utils/utils.dart';
 
-class MenuController extends GetxController {
+class MenueController extends GetxController {
   List<Category> categories = [];
   List<Menu> menu = [];
 
